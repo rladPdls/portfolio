@@ -1,0 +1,265 @@
+body {
+        font-family: "Gowun Dodum", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal; 
+        background-color: #fafafa;
+}
+
+/* 헤더 영역*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    background-color: #f0f0f0;
+
+    height: 72px;
+    align-items: center;
+    padding: 0 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color:#4407ac;
+    font-size: 36px;
+    font-weight: 1000;
+}
+
+.nav-manu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-list{
+    display: inline;
+    color: rgb(54, 54, 54);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#nav-contact {
+    height: 36px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    color: #4407ac;
+    border: 1px solid #4407ac;
+    border-radius: 10px;
+    font-weight: 800;
+
+}
+
+#nav-contact:hover {
+    background-color: #4407ac;
+    color: beige;
+    font-weight: bold;
+}
+
+#nav-contact:active {
+    background-color: rgb(118, 118, 193);
+    color: beige;
+    font-weight: bold;
+}
+
+/*메인 영역*/
+
+.text-default {
+    color: rgb(5, 5, 5);
+}
+
+.text-Primary{
+    color:#4407ac;
+}
+
+.text-point {
+    color: #4407ac;
+}
+
+main {
+    margin-top: 72px;
+    row-gap: 60px;
+
+}
+
+section {
+    padding: 40px 40px 20px 40px;
+}
+
+#first {
+padding: 40px 40px 20px 40px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+row-gap: 20px;
+max-width: 1280px;
+}
+
+/*포트폴리오 카드*/
+.list{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-block-end: o auto;
+    max-width: 1320px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 20px 10px;
+}
+
+.list_card{
+    flex-shrink: 0;
+    width: 480px;
+    height: 240px;
+    background-color: rgb(224, 224, 224);
+    padding: 20px 20px;
+    display: flex;
+    border-radius: 20px;
+    gap:50px
+}
+
+.list_card img{
+    width: 240px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list_card:hover{
+    background-color: #9a9a9a;
+    transform: scale(1.02);
+}
+
+.list_card_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list_card_description{
+    display: flex;
+    flex-direction: column;
+
+}
+.project_tag_style{
+    flex-shrink: 0;
+    color: #4407ac;
+    padding: 2px 8px;
+    border: 1px solid  #4407ac;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+
+    align-items: center;
+}
+
+.project_tag_layout{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.project_title{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0 5px 0;
+}
+
+.project_explain{
+    font-size: 16px;
+    padding: 20px 0 10px 0;
+}
+
+/*버튼 디자인*/
+.btn-primary{
+    height: 32px;
+    background-color: #4407ac;;
+    padding: 0 24px;
+    color: #f4f4f4;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.btn-primary:hover{
+    background-color: #480057;
+    color: #fff;
+    transform: scale(1.05);
+    transition: background-color 0.5 ease-in;
+}
+
+.btn-primary:active{
+    background-color: #0e0210;
+    color: #fff;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.heading {
+    font: size 36px;
+    font-weight: 600;
+    line-height: 1.2px;
+    letter-spacing: -0.1;
+}
+
+.body-text {
+    font: size 20px;
+    font-weight: 400;
+    line-height: 1.5px;
+    letter-spacing: -0.1;
+}   
+
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.1;
+}
+
+/*footer*/
+.footer_style{
+background-color: #221e19;
+color: beige;
+padding: 32px 50px;
+
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+.footer_info_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer_info_card{
+    padding: 5px 10px;
+
+}
+.footer_info_title{
+    font-weight: bold;
+    font-size: 20;
+    padding: 50px, 0;
+}

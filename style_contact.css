@@ -1,0 +1,143 @@
+/* 헤더 영역*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+    background-color: #f0f0f0;
+
+    height: 72px;
+    align-items: center;
+    padding: 0 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color:#4407ac;
+    font-size: 36px;
+    font-weight: 1000;
+}
+
+.nav-manu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-list{
+    display: inline;
+    color: rgb(54, 54, 54);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#nav-contact {
+    height: 36px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    color: #4407ac;
+    border: 1px solid #4407ac;
+    border-radius: 10px;
+    font-weight: 800;
+
+}
+
+#nav-contact:hover {
+    background-color: #4407ac;
+    color: beige;
+    font-weight: bold;
+}
+
+#nav-contact:active {
+    background-color: rgb(118, 118, 193);
+    color: beige;
+    font-weight: bold;
+}
+
+/*메인 영역*/
+
+.container {
+    display: flex;
+    flex-direction: row; /* 가로 배치 유지 */
+    align-items: flex-start; /* 위쪽 정렬 */
+    gap: 40px; /* 이미지와 텍스트 사이 간격 */
+    padding: 200px 50px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 480px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0; /* 이미지 크기 고정 */
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+/* 각 텍스트 라인 스타일 */
+.sub-heading {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.sns {
+    font-size: 16px;
+    color: #4407ac;
+    cursor: pointer;
+}
+
+/*footer*/
+.footer_style{
+    background-color: #221e19;
+    color: beige;
+    padding: 32px 50px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    
+    .footer_info_list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer_info_card{
+        padding: 5px 10px;
+    
+    }
+    .footer_info_title{
+        font-weight: bold;
+        font-size: 20;
+        padding: 50px, 0;
+    }
